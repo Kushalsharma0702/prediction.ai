@@ -1,0 +1,6 @@
+x,Stars,Rating,Reviews,RAM (GB),Storage (GB),Display Size (inch),Product Name,Camera,Description,Predictions
+0,4.4,8.8,950,4,64,6.1,Apple iPhone 14,Dual 12MP,Previous iPhone model,0
+0,4.1,8.2,870,6,128,6.5,Samsung Galaxy A52,Quad 64MP,Mid-range Samsung phone,1
+0,4.0,7.8,820,4,64,6.53,Xiaomi Redmi 9,Triple 13MP,Budget phone,1
+0,4.5,8.6,910,12,256,6.55,OnePlus 8T,Quad 48MP,High-end phone,2
+0,4.3,8.5,890,6,128,5.81,Google Pixel 4a,Single 12.2MP,Compact Android phone,0
