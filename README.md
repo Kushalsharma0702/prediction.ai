@@ -1,69 +1,70 @@
 # Universal Prediction Model
 
-## Overview
-This project involves the development of a universal prediction model capable of predicting missing attributes in datasets across various categories. The model utilizes a Gradient Boosting Classifier and robust preprocessing techniques to ensure high accuracy and reliability.
+Welcome to the **Universal Prediction Model** repository! This project focuses on predicting missing attributes in a dataset across multiple categories with a minimum accuracy of 80%. The model is designed to be reliable, feasible, and trustworthy, utilizing advanced algorithms and techniques to ensure high-quality predictions.
+
+## Table of Contents
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Model Overview](#model-overview)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Introduction
+
+This project is designed to handle various types of datasets, making predictions on missing attributes with high accuracy. The model uses a combination of preprocessing techniques, feature engineering, and machine learning algorithms to deliver reliable predictions that can be applied to a wide range of datasets.
 
 ## Features
-- **Universal Applicability**: Designed to handle datasets with different types of data, including both numeric and categorical features.
-- **Robust Preprocessing**: Includes imputation for missing values and scaling for numeric features, as well as encoding for categorical features.
-- **High Accuracy**: The model achieves a minimum of 80% accuracy on the validation set, ensuring trustworthy predictions.
-- **Flexible Input Handling**: Can adapt to datasets with missing features by assigning default values during prediction.
 
-## Getting Started
+- **Universal Application**: The model is versatile and can be applied to any category of datasets.
+- **High Accuracy**: Achieves a minimum accuracy of 80% on validation datasets.
+- **Advanced Algorithms**: Utilizes Gradient Boosting, a powerful ensemble learning technique.
+- **Scalable**: Designed to work efficiently with large datasets.
 
-### Prerequisites
-- Python 3.7+
-- pandas
-- scikit-learn
+## Installation
 
-### Installation
-Clone the repository and install the required dependencies:
+Clone this repository to your local machine:
 
 ```bash
-git clone <repository-url>
-cd <repository-directory>
+git clone https://github.com/Kushalsharma0702/prediction.ai.git
+```
+
+Navigate to the project directory:
+
+```bash
+cd prediction.ai
+```
+
+Install the required dependencies:
+
+```bash
 pip install -r requirements.txt
 ```
 
-### Usage
-1. **Prepare your datasets**: Ensure that your training and test datasets are in CSV format.
-2. **Run the Model**:
-    ```bash
-    python gst.py
-    ```
-3. **Output**: Predictions for missing values in the test dataset will be saved to `test_predictions.csv`.
+## Usage
 
-### Example
-```python
-# Load data
-train_df = pd.read_csv('Booktrain.csv')
-test_df = pd.read_csv('Booktest.csv')
+1. **Prepare your dataset**: Ensure your dataset is in CSV format and includes a target column that you want to predict.
+2. **Update the configuration**: Modify the script to point to your dataset file.
+3. **Run the model**: Execute the script to train the model and make predictions on your dataset.
 
-# Build and train the model
-target_column = 'Target (GST Category)'
-model, numeric_features, categorical_features = build_and_train_model(train_df, target_column)
-
-# Predict missing values on the test set
-predict_missing_values(model, test_df, numeric_features, categorical_features)
+```bash
+python gst.py
 ```
 
-## Model Structure
+## Model Overview
 
-- **Preprocessing**:
-  - **Numeric Features**: Imputation using the median value and standard scaling.
-  - **Categorical Features**: Imputation using the most frequent value and one-hot encoding.
-  
-- **Model**: Gradient Boosting Classifier
+The Universal Prediction Model is built using the following components:
 
-## Performance
-- **Validation Accuracy**: 1.00 (Example result; actual accuracy may vary based on the dataset).
+- **Data Preprocessing**: Handles missing values and scales numerical data.
+- **Feature Engineering**: Encodes categorical data using OneHotEncoder.
+- **Model Training**: Trains a Gradient Boosting Classifier for categorical predictions.
+- **Prediction**: Generates predictions for missing attributes and outputs them to a CSV file.
 
 ## Contributing
-Feel free to fork this repository and contribute by submitting a pull request.
+
+We welcome contributions to enhance the model's performance, add new features, or improve documentation. Please fork this repository and submit a pull request with your changes.
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgements
-- [pandas](https://pandas.pydata.org/)
-- [scikit-learn](https://scikit-learn.org/)
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
